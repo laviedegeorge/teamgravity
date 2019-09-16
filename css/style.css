@@ -20,3 +20,9 @@
     font-family: 'Raleway-Regular';
     src: url("../font/Raleway-Regular.ttf") format("truetype");
 }
+:root {
+    --color-1:#F9F9F9;
+    --color-2:#5ECCF1;
+    --text-color:#888888;
+    --color-3:#333333;
+}
