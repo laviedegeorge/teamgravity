@@ -1,0 +1,22 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'Raleway-Bold'
+}
+
+
+@font-face{
+    font-family: 'Raleway-Bold';
+    src: url("../font/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: 'Raleway-Light';
+    src: url("../font/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: 'Raleway-Regular';
+    src: url("../font/Raleway-Regular.ttf") format("truetype");
+}
