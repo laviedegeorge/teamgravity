@@ -1,0 +1,1 @@
+<script src="<?php echo $appRoot ?>/js/addon/jquery.js"></script>
