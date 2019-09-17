@@ -29,21 +29,22 @@
                 </div>
             </form>
 
-            <div class="r-flex login-area">
-                <p class="login-text font-18 raleway-bold">login</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <svg width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7H37" stroke="#9C9C9C"/>
-                    <path d="M28.5 1L36.5 7L28.5 12.5" stroke="#9C9C9C"/>
-                </svg>
-            </div>
+            <button class="r-flex login-text btn-register font-18 raleway-bold">login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 7H37" stroke="#9C9C9C"/>
+                        <path d="M28.5 1L36.5 7L28.5 12.5" stroke="#9C9C9C"/>
+                    </svg>
+                </button>
         </div>
         <div class="signup-tab bg-grey text-center">
-            <p class="sign-up-text font-16 raleway-regular">sign up</p>
+            <p class="sign-x-text font-16 raleway-regular">sign up</p>
             <span>
                 <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 16.5L8.5 8.5L0.999999 0.5" stroke="#969696"/>
                 </svg>
             </span>
-        </div>                        
+        </div>    
+        
+        <div class="error-box raleway-regular font-14">Invalid email or password provided</div>
     </main>
 </body>

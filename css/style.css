@@ -23,6 +23,18 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+input, button{
+    border: none;
+    outline: none !important;
+    background: transparent;
+}
+
+button,
+input[type="checkbox"]{
+    cursor: pointer;
 }
 
 .body-all{
@@ -73,6 +85,10 @@ body{
     background: #FDFDFD;
 }
 
+.bg-grey-dark{
+    background: #f0f0f0;
+}
+
 p{
     margin-bottom: 0rem !important;
 }
@@ -87,8 +103,8 @@ p{
 
 .main{
     width: 450px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
+    position: relative;
 }
 
 .form-area{
@@ -105,23 +121,35 @@ p{
     margin-top: 25px;
     margin-bottom: 35px;
 }
-
+.form-signup{
+    padding-right: 5px;
+    margin-bottom: 15px;
+}
 .focus-input-area{
-    padding: 15px 14px;
+    padding: 10px 14px;
+    border-radius: 15px;
+    margin-top: 12px;
 }
 .form-input-area input{
     color: #888888;
-    border: none;
-    outline: none;
-    background: transparent;
 }
+
 .form-input-area input::placeholder{
     color: #888888;
     font-size: 16px;
     font-family: 'Raleway-regular'
 }
 
-.login-area svg, 
+input[type="checkbox"],
+.conditions{
+    align-self: center;
+}
+
+.conditions-checkbox{
+    padding-bottom: 65px;
+}
+
+.btn-register svg, 
 .login-text{
     align-self: center;
     text-transform: uppercase;
@@ -138,13 +166,11 @@ p{
 
 .signup-tab svg{
     margin-top:-65px 
-    /* align-self: center; */
 }
 
-.sign-up-text{
+.sign-x-text{
     position: absolute;
     left: -250%;
-    top:150px; 
     width: 300px;
     transform: rotate(-90deg);
     color: #33333379;
@@ -152,3 +178,18 @@ p{
     text-transform: uppercase;
 }
 
+.sign-in-text{
+    top:260px;
+}
+.sign-up svg{
+    margin-right: 4px;
+}
+
+.error-box{
+    position: absolute;
+    width: 100%;
+    padding: 17px 28px;
+    top: 100%;
+    background: #FF8282;
+    visibility: hidden;
+}
