@@ -20,3 +20,134 @@
     font-family: 'Raleway-Regular';
     src: url("../font/Raleway-Regular.ttf") format("truetype");
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.body-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E5E5E5;
+}
+
+/* FONTS */
+.raleway-bold{
+    font-family: 'Raleway-Bold';
+}
+
+.raleway-light{
+    font-family: 'Raleway-Light';
+}
+
+.raleway-regular{
+    font-family: 'Raleway-Regular';
+}
+
+/* FONT SIZES */
+.font-14{
+    font-size: 14px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.font-18{
+    font-size: 18px;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.font-36{
+    font-size: 36px;
+}
+.r-flex{
+    display: flex;
+}
+/* BACKGROUND COLOR CLASSES */
+.bg-grey{
+    background: #FDFDFD;
+}
+
+p{
+    margin-bottom: 0rem !important;
+}
+/* TEXT COLOR */
+.text-lightblue{
+    color: #5ECCF1;
+}
+
+.text-grey{
+    color: #888888;
+}
+
+.main{
+    width: 450px;
+    margin: 0 auto;
+    background: green;
+}
+
+.form-area{
+    width: 400px;
+    padding: 20px 30px;
+}
+
+.signup-tab{
+    width: 50px;
+}
+
+.form-input-area{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.focus-input-area{
+    padding: 15px 14px;
+}
+.form-input-area input{
+    color: #888888;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.form-input-area input::placeholder{
+    color: #888888;
+    font-size: 16px;
+    font-family: 'Raleway-regular'
+}
+
+.login-area svg, 
+.login-text{
+    align-self: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.signup-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.signup-tab svg{
+    margin-top:-35px 
+    /* align-self: center; */
+}
+
+.sign-up-text{
+    position: absolute;
+    left: -250%;
+    top:150px; 
+    width: 300px;
+    transform: rotate(-90deg);
+    color: #33333379;
+    text-align: center;
+    text-transform: uppercase;
+}

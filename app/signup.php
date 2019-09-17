@@ -6,5 +6,5 @@
 ?>
 
 <body>
-    <div class="text-center">MMMMMM</div>
+    
 </body>
