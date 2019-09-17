@@ -9,7 +9,7 @@
     <main class="main r-flex">
         <div class="form-area bg-white">
             <h3 class="raleway-bold font-36 text-lightblue">Sign in</h3>
-            <p class="raleway-regular font-14 text-grey">Provide email and password</p>
+            <p class="raleway-regular font-14 text-grey">Provide email and passwor</p>
 
             <form action="#" class="form-input-area">
                 <div class="r-flex focus-input-area">
