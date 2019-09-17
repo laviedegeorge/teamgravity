@@ -1,3 +1,3 @@
 <?php
-    $appRoot = "http://localhost/teamgravity";
-?>
+$appRoot = "http://localhost/teamgravity";
+$errors = "";
