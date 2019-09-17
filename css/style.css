@@ -101,10 +101,37 @@ p{
     color: #888888;
 }
 
-.main{
+.main {
     width: 450px;
     margin: 0 auto;  
     position: relative;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+
+/* .main * {
+    outline: solid 1px currentColor;
+}
+ */
+.main .slider {
+    display: inline-flex;
+    align-items: flex-start;
+    transform: translateX(0);
+    transition: all .3s ease-out;
+}
+
+.slider section {
+    width: 400px;
+    flex: 0 0 400px;
+}
+
+.slider aside {
+    flex: 0 0 50px;
+    align-self: stretch;
+}
+
+.main .slider.move-right {
+    transform:translateX(calc(-50% + 25px))
 }
 
 .form-area{
@@ -158,31 +185,25 @@ input[type="checkbox"],
 
 .signup-tab{
     display: flex;
+    align-self: stretch;
+    background-color: yellow;
     flex-direction: column;
     justify-content: center;
     position: relative;
     cursor: pointer;
 }
 
-.signup-tab svg{
-    margin-top:-65px 
-}
-
-.sign-x-text{
-    position: absolute;
-    left: -250%;
-    width: 300px;
-    transform: rotate(-90deg);
+.sign-x-text {
+    white-space: nowrap;
+    transform: rotate(90deg);
     color: #33333379;
     text-align: center;
     text-transform: uppercase;
 }
 
-.sign-in-text{
-    top:260px;
-}
-.sign-up svg{
-    margin-right: 4px;
+.sign-x-text svg {
+    margin-right: 15px;
+    transform: rotate(90deg);
 }
 
 .error-box{
