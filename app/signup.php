@@ -5,6 +5,6 @@
     include "../includes/meta.php";
 ?>
 
-<body class="body-all">
-
+<body>
+    
 </body>

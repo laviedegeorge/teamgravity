@@ -5,7 +5,6 @@
     font-family: 'Raleway-Bold'
 }
 
-
 @font-face{
     font-family: 'Raleway-Bold';
     src: url("../font/Raleway-Bold.ttf") format("truetype");
@@ -89,7 +88,7 @@ p{
 .main{
     width: 450px;
     margin: 0 auto;
-    background: green;
+    
 }
 
 .form-area{
