@@ -1,29 +1,32 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
     font-family: 'Raleway-Bold'
 }
 
-@font-face{
+@font-face {
     font-family: 'Raleway-Bold';
     src: url("../font/Raleway-Bold.ttf") format("truetype");
 }
 
-@font-face{
+@font-face {
     font-family: 'Raleway-Light';
     src: url("../font/Raleway-Light.ttf") format("truetype");
 }
 
-@font-face{
+@font-face {
     font-family: 'Raleway-Regular';
     src: url("../font/Raleway-Regular.ttf") format("truetype");
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 input, button{
@@ -40,7 +43,19 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-.body-all{
+input,
+button {
+    border: none;
+    outline: none !important;
+    background: transparent;
+}
+
+button,
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.body-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,67 +63,71 @@ input[type="checkbox"]{
 }
 
 /* FONTS */
-.raleway-bold{
+.raleway-bold {
     font-family: 'Raleway-Bold';
 }
 
-.raleway-light{
+.raleway-light {
     font-family: 'Raleway-Light';
 }
 
-.raleway-regular{
+.raleway-regular {
     font-family: 'Raleway-Regular';
 }
 
 /* FONT SIZES */
-.font-14{
+.font-14 {
     font-size: 14px;
 }
 
-.font-16{
+.font-16 {
     font-size: 16px;
 }
 
-.font-18{
+.font-18 {
     font-size: 18px;
 }
 
-.font-20{
+.font-20 {
     font-size: 20px;
 }
 
-.font-36{
+.font-36 {
     font-size: 36px;
 }
-.r-flex{
+
+.r-flex {
     display: flex;
 }
+
 /* BACKGROUND COLOR CLASSES */
-.bg-grey{
+.bg-grey {
     background: #FDFDFD;
 }
 
-.bg-grey-dark{
+.bg-grey-dark {
     background: #f0f0f0;
 }
 
-p{
+p {
     margin-bottom: 0rem !important;
 }
+
 /* TEXT COLOR */
-.text-lightblue{
+.text-lightblue {
     color: #5ECCF1;
 }
 
-.text-grey{
+.text-grey {
     color: #888888;
 }
 
 .main {
     width: 450px;
-    margin: 0 auto;  
+    margin: 0 auto;
     position: relative;
     transition: all .3s ease-out;
+
 }
 
 /* .main * {
@@ -134,22 +153,55 @@ p{
 
 .main .slider.move-right {
     transform:translateX(calc(-50% + 25px))
+
 }
 
-.form-area{
+/* .main * {
+    outline: solid 1px currentColor;
+}
+ */
+.main .slider {
+    display: inline-flex;
+    align-items: flex-start;
+    transform: translateX(0);
+    transition: all .3s ease-out;
+}
+
+.slider section {
+    width: 400px;
+    flex: 0 0 400px;
+}
+
+.slider aside {
+    flex: 0 0 50px;
+    align-self: stretch;
+}
+
+.main .slider.move-right {
+    transform: translateX(calc(-50% + 25px))
+}
+
+.form-area {
     width: 400px;
     padding: 20px 30px;
 }
 
-.signup-tab{
+.signup-tab {
     width: 50px;
 }
 
-.form-input-area{
+.form-input-area {
     width: 100%;
     margin-top: 25px;
     margin-bottom: 35px;
 }
+
+.form-signup {
+    padding-right: 5px;
+    margin-bottom: 15px;
+}
+
+.focus-input-area {
 .form-signup{
     padding-right: 5px;
     margin-bottom: 15px;
@@ -159,18 +211,19 @@ p{
     border-radius: 15px;
     margin-top: 12px;
 }
-.form-input-area input{
+
+.form-input-area input {
     color: #888888;
 }
 
-.form-input-area input::placeholder{
+.form-input-area input::placeholder {
     color: #888888;
     font-size: 16px;
     font-family: 'Raleway-regular'
 }
 
 input[type="checkbox"],
-.conditions{
+.conditions {
     align-self: center;
 }
 

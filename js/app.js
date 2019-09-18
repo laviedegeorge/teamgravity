@@ -35,4 +35,3 @@ window.addEventListener("load", () => {
     btn.addEventListener("click", slide);
 })
 
-
