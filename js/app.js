@@ -35,4 +35,23 @@ window.addEventListener("load", () => {
     btn.addEventListener("click", slide);
 })
 
+/* ------------CLOSE WELCOME PAGE------------------ */
+
+
+const successCloseBtn = document.getElementById("successCloseBtn");
+const welcomeCloseBtn = document.getElementById("welcomeCloseBtn");
+
+
+const closePage = (element) => {
+    element.classList.add("close");
+}
+
+successCloseBtn.addEventListener("click" , () => {
+    const successMsg = document.getElementById("successMsg");
+    successMsg.classList.add("close");
+});
+welcomeCloseBtn.addEventListener("click" , () => {
+    const welcomeBody = document.getElementById("welBody");
+    welcomeBody.classList.add("close");
+});
 

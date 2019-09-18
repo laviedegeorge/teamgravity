@@ -215,7 +215,73 @@ input[type="checkbox"],
     visibility: hidden;
 }
 
+/* ----------------------MODALS---------------------------------------------------------- */
+.suc-msg{
+    width: 200px;
+    padding: 15px;
+    background-color: yellow;
+    /* border-radius: 20px; */
+    box-shadow: 3px 3px 1px #888888;
+    position:absolute;
+    top: 0%;
+    left: calc(100% - 220px);
+    text-align: center;
+    margin-top: 10px;
+}
+#successCloseBtn{
+    cursor: pointer;
+}
 
+.welcome {
+    width: 100%;
+    height: 100vh;
+    background-color: #888888e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    transition: all .5s;
+}
+
+.wel-msg {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    box-shadow: 3px 3px 10px #000000;
+}
+#close{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: yellow;
+    box-shadow: 1px 1px 10px #000000;
+    position: relative;
+    top: -10px;
+    left: 100px;
+    transition: ease-in-out .5s;
+}
+.close{
+    display: none;
+}
+.check{
+    width: 200px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #5ECCF1;
+    border-radius: 50%;
+}
+.wel-msg p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace
+}
 
 /* -------------------------------------MEDIA QUERY--------------------------------------- */
 

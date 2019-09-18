@@ -6,6 +6,22 @@
 ?>
 
 <body class="body-all">
+    
+        <div class="suc-msg close" id="successMsg">
+            <p>Sign-Up Successful</p>
+            <p id="successCloseBtn">x</p>
+        </div>
+
+    <main class="welcome close" id="welBody">
+        <div class="wel-msg">
+            <button id="welcomeCloseBtn">x</button>
+            <div class="check">
+                <img src="./img/check-solid.svg" alt="checked">
+            </div>
+            <p>Welcome</p>
+            <p id="name">George</p>
+        </div>
+    </main>
     <main class="main r-flex">
         <section class="slider" id="mainCont">
             <section id="kc-signIn">
