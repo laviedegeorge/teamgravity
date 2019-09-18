@@ -1,34 +1,35 @@
 {
-    "users" :[
-       
-                
-                    {
-                        "id": 1,
-                        "username": "admin",
-                        "email": "admin@gmail.com",
-                        "password": "12345678"
-
-                    },
-                    {
-                        "id": 2,
-                        "username": "admin2",
-                        "email": "admin@gmail2.com",
-                        "password": "12345678"
-
-                    },
-
-                    {
-                        "id": 3,
-                        "username": "admin3",
-                        "email": "admin@gmail3.com",
-                        "password": "12345678"
-
-                    }
-        
-        
-            ]
-
-    
-
+    "users": [{
+        "name": "admin",
+        "email": "admin@gmail.com",
+        "password": "12345678"
+    }, {
+        "name": "admin2",
+        "email": "admin@gmail2.com",
+        "password": "12345678"
+    }, {
+        "name": "admin3",
+        "email": "admin@gmail3.com",
+        "password": "12345678"
+    }, {
+        "email": "rischoola@gmail.com",
+        "name": "Rischoola Rischoola",
+        "password": "code"
+    }, {
+        "email": "kaperskyguru@gmail.com",
+        "name": "Solomon Eseme",
+        "password": "code"
+    }, {
+        "email": "solomoneseme@gmail.com2",
+        "name": "Solomon Eseme",
+        "password": "code"
+    }, {
+        "email": "rischoola67@gmail.com",
+        "name": "Rischoola Rischoola",
+        "password": "code"
+    }, {
+        "email": "solomone67seme@gmail.com",
+        "name": "Solomon Eseme",
+        "password": "code"
+    }]
 }
-    
