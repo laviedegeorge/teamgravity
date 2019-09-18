@@ -1,3 +1,3 @@
 <?php
-    $appRoot = "http://localhost:8080/teamgravity";
+    $appRoot = "http://localhost/teamgravity";
 ?>

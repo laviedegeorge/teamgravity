@@ -14,7 +14,7 @@
             <form action="#" class="form-input-area">
                 <div class="r-flex focus-input-area">
                     <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="email" name="" id="" placeholder="hello@vendor.com" class="font-16 raleway-normal">
+                    <input type="email" name="" required id="" placeholder="hello@vendor.com" class="font-16 raleway-normal">
                 </div>
                 <div class="r-flex focus-input-area">
                     &nbsp;<span class="text-lightblue font-20">
@@ -25,7 +25,7 @@
                     </svg>
 
                     </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="email" name="" id="" placeholder="password" class="font-16 raleway-normal">
+                    <input type="password" required name="" id="" placeholder="password" class="font-16 raleway-normal">
                 </div>
             </form>
 
