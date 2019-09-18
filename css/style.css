@@ -32,6 +32,9 @@ input, button{
     background: transparent;
 }
 
+input:not(#checkbox){
+    width: 280px;
+}
 button,
 input[type="checkbox"]{
     cursor: pointer;
@@ -105,7 +108,6 @@ p{
     width: 450px;
     margin: 0 auto;  
     position: relative;
-    overflow: hidden;
     transition: all .3s ease-out;
 }
 
@@ -173,20 +175,29 @@ input[type="checkbox"],
 }
 
 .conditions-checkbox{
+    margin-top: 10px;
     padding-bottom: 65px;
 }
 
 .btn-register svg, 
-.login-text{
+.x-text{
     align-self: center;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
+.btn-register{
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.btn-register:hover{
+    background: #E5E5E5;
+    color: rgba(0, 0, 0, 0.603);
+}
 .signup-tab{
     display: flex;
-    align-self: stretch;
-    background-color: yellow;
+    /* align-self: stretch; */
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -195,15 +206,14 @@ input[type="checkbox"],
 
 .sign-x-text {
     white-space: nowrap;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     color: #33333379;
-    text-align: center;
     text-transform: uppercase;
 }
 
-.sign-x-text svg {
-    margin-right: 15px;
-    transform: rotate(90deg);
+.sign-up svg {
+    margin-top: -75px;
+    margin-right: 3px;
 }
 
 .error-box{
@@ -212,7 +222,7 @@ input[type="checkbox"],
     padding: 17px 28px;
     top: 100%;
     background: #FF8282;
-    visibility: hidden;
+    display: none;
 }
 
 /* ----------------------MODALS---------------------------------------------------------- */
@@ -244,6 +254,27 @@ input[type="checkbox"],
     left: 0%;
     z-index: 10;
     transition: all .5s;
+}
+.success-body{
+    background: #5ECCF1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+.congrat-text{
+    text-align: center;
+    font-size: 25px;
+    animation: textSlideUp 2s ease-in-out;
+}
+
+@keyframes textSlideUp{
+    from{
+        transform: translateY(120px);
+        opacity: 0;
+    }to{
+        transform: translate(0px);
+        opacity: 1;
+    }
 }
 
 .wel-msg {
