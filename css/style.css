@@ -36,22 +36,6 @@ button {
     background: transparent;
 }
 
-input:not(#checkbox) {
-    width: 280px;
-}
-
-button,
-input[type="checkbox"] {
-    cursor: pointer;
-}
-
-input,
-button {
-    border: none;
-    outline: none !important;
-    background: transparent;
-}
-
 button,
 input[type="checkbox"] {
     cursor: pointer;
@@ -128,6 +112,7 @@ p {
     width: 450px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
     transition: all .3s ease-out;
 
 }
@@ -229,32 +214,21 @@ input[type="checkbox"],
     align-self: center;
 }
 
-.conditions-checkbox {
-    margin-top: 10px;
+.conditions-checkbox{
     padding-bottom: 65px;
 }
 
-.btn-register svg,
-.x-text {
+.btn-register svg, 
+.login-text{
     align-self: center;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all .3s ease-in-out;
 }
 
-.btn-register {
-    padding: 5px 10px;
-    border-radius: 15px;
-}
-
-.btn-register:hover {
-    background: #E5E5E5;
-    color: rgba(0, 0, 0, 0.603);
-}
-
-.signup-tab {
+.signup-tab{
     display: flex;
-    /* align-self: stretch; */
+    align-self: stretch;
+    background-color: yellow;
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -263,14 +237,15 @@ input[type="checkbox"],
 
 .sign-x-text {
     white-space: nowrap;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     color: #33333379;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.sign-up svg {
-    margin-top: -75px;
-    margin-right: 3px;
+.sign-x-text svg {
+    margin-right: 15px;
+    transform: rotate(90deg);
 }
 
 .error-box {

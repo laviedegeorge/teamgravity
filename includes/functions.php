@@ -1,4 +1,3 @@
 <?php
-
-$appRoot = "http://localhost/teamgravity";
-$errors = "";
+    $appRoot = "/teamgravity";
+?>

@@ -40,8 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 id="myForm">
                 <div class="r-flex focus-input-area">
                     <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
                     <input type="email" name="email" id="" placeholder="Enter your email address"
                         class="font-16 raleway-normal">
+=======
+                    <input type="email" name="" id="" placeholder="hello@vendor.com" class="font-16 raleway-normal">
+>>>>>>> parent of fce8aad... js input validation
                 </div>
                 <div class="r-flex focus-input-area">
                     &nbsp;<span class="text-lightblue font-20">
@@ -52,8 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </svg>
 
                     </span>&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
                     <input type="password" name="password" id="" placeholder="Enter your password"
                         class="font-16 raleway-normal">
+=======
+                    <input type="email" name="" id="" placeholder="password" class="font-16 raleway-normal">
+>>>>>>> parent of fce8aad... js input validation
                 </div>
 
                 <div class="r-flex login-area">

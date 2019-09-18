@@ -65,8 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <h3 class="raleway-bold font-36 text-lightblue">Sign up</h3>
             <p class="raleway-regular font-14 text-grey">Fill the form to create account</p>
 
+<<<<<<< HEAD
             <form action="<?php echo htmlspecialchars($_SERVER['signup.php']); ?>" method="post"
                 class="form-input-area form-signup">
+=======
+            <form action="#" class="form-input-area form-signup">
+>>>>>>> parent of fce8aad... js input validation
                 <div class="r-flex focus-input-area bg-grey-dark">
                     <span class="text-lightblue font-20">
                         <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,12 +81,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <path d="M13.5 19H11.5" stroke="#5ECCF1" />
                         </svg>
                     </span>&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
                     <input type="text" name="fullname" id="" placeholder="full name" class="font-16 raleway-normal">
                 </div>
                 <div class="r-flex focus-input-area bg-grey-dark">
                     <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="email" name="email" id="" placeholder="hello@vendor.com"
                         class="font-16 raleway-normal">
+=======
+                    <input type="email" name="" id="" placeholder="full name" class="font-16 raleway-normal">
+                </div>
+                <div class="r-flex focus-input-area bg-grey-dark">
+                    <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="" id="" placeholder="hello@vendor.com" class="font-16 raleway-normal">
+>>>>>>> parent of fce8aad... js input validation
                 </div>
                 <div class="r-flex focus-input-area bg-grey-dark">
                     &nbsp;<span class="text-lightblue font-20">
@@ -93,7 +105,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </svg>
 
                     </span>&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
                     <input type="password" name="password" id="" placeholder="password" class="font-16 raleway-normal">
+=======
+                    <input type="email" name="" id="" placeholder="password" class="font-16 raleway-normal">
+>>>>>>> parent of fce8aad... js input validation
                 </div>
                 <div class="r-flex focus-input-area bg-grey-dark">
                     &nbsp;<span class="text-lightblue font-20">
@@ -104,6 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </svg>
 
                     </span>&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
                     <input type="password" name="confirm-password" id="" placeholder="confirm password"
                         class="font-16 raleway-normal">
                 </div>
@@ -113,8 +130,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <input type="checkbox" name="terms" id="">&nbsp;&nbsp;&nbsp;
                     <p class="raleway-regular font-14 text-grey conditions">I agree to the <b>terms</b> and
                         <b>conditions</b></p>
+=======
+                    <input type="email" name="" id="" placeholder="confirm password" class="font-16 raleway-normal">
+>>>>>>> parent of fce8aad... js input validation
                 </div>
+            </form>
 
+<<<<<<< HEAD
 
                 <button
                     class="r-flex login-text btn-register font-18 raleway-bold">register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -132,8 +154,22 @@ if ($errors) {?>
 
         <?php }
 ?>
+=======
+            <div class="r-flex conditions-checkbox">
+                <input type="checkbox" name="" id="">&nbsp;&nbsp;&nbsp;
+                <p class="raleway-regular font-14 text-grey conditions">I agree to the <b>terms</b> and <b>conditions</b></p>
+            </div>
+            
+            <button class="r-flex login-text btn-register font-18 raleway-bold">register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <svg width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7H37" stroke="#9C9C9C"/>
+                    <path d="M28.5 1L36.5 7L28.5 12.5" stroke="#9C9C9C"/>
+                </svg>
+            </button>
+            </div>
+        </div>   
+        <div class="error-box raleway-regular font-14">Invalid email or password provided</div>
+>>>>>>> parent of fce8aad... js input validation
 
     </main>
-
-    <script src="../js/signup.js"></script>
 </body>
