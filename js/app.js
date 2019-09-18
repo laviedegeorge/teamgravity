@@ -1,4 +1,6 @@
 window.addEventListener("load", () => {
+
+    
     const signIn = document.getElementById("kc-signIn");
     const signUp = document.getElementById("kc-signUp");
     const slider = document.getElementById("mainCont");
@@ -33,6 +35,19 @@ window.addEventListener("load", () => {
         }
     }
     btn.addEventListener("click", slide);
+
+    const errorBox = document.getElementById("error-box");
+    if(errorBox){
+        setTimeout(() => {
+            errorBox.style.display ="none";
+        }, 3000);
+    }
+    
+    if(successMsg){
+        setTimeout(() => {
+            successMsg.classList.add("close");
+        }, 3000);
+    }
 })
 
 /* ------------CLOSE WELCOME PAGE------------------ */
@@ -54,4 +69,6 @@ welcomeCloseBtn.addEventListener("click" , () => {
     const welcomeBody = document.getElementById("welBody");
     welcomeBody.classList.add("close");
 });
+
+/* ----------------------------------------------------------------------------------------- */
 

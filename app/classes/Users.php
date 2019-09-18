@@ -22,7 +22,7 @@ class Users
         $user = null;
         foreach ($users as $users1 => $user) {
             $user = array_filter($user, function ($array) use ($email, $password) {
-                if ($array->email == $email && $array->password == $password) {
+                if (strtolower($array->email) == strtolower($email) && $array->password == $password) {
                     return $array;
                 }
             });

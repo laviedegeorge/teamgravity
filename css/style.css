@@ -249,10 +249,10 @@ input[type="checkbox"],
 }
 
 .error-box {
-    position: absolute;
-    width: 100%;
+    top: calc(0% + 5px);
+    right: calc(0% + 5px);
     padding: 17px 28px;
-    top: 100%;
+    position: absolute;
     background: #FF8282;
 }
 
@@ -260,7 +260,7 @@ input[type="checkbox"],
 .suc-msg{
     width: 200px;
     padding: 15px;
-    background-color: yellow;
+    background-color: #5ECCF1;
     /* border-radius: 20px; */
     box-shadow: 3px 3px 1px #888888;
     position:absolute;
