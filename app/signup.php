@@ -123,4 +123,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="error-box raleway-regular font-14">Invalid email or password provided</div>
 
     </main>
+
+    <script src="../js/signup.js"></script>
 </body>
