@@ -35,7 +35,6 @@ window.addEventListener("load", () => {
     btn.addEventListener("click", slide);
 })
 
-<<<<<<< HEAD
 /* ------------CLOSE WELCOME PAGE------------------ */
 
 
@@ -56,5 +55,3 @@ welcomeCloseBtn.addEventListener("click" , () => {
     welcomeBody.classList.add("close");
 });
 
-=======
->>>>>>> 049199a05cb7256b9964d96770e73876bae6580f
