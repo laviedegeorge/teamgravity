@@ -11,7 +11,7 @@
             <section id="kc-signIn">
                 <div class="form-area bg-white">
                     <h3 class="raleway-bold font-36 text-lightblue">Sign in</h3>
-                    <p class="raleway-regular font-14 text-grey">Provide email and passwor</p>
+                    <p class="raleway-regular font-14 text-grey">Provide email and password</p>
 
                     <form action="#" class="form-input-area">
                         <div class="r-flex focus-input-area">

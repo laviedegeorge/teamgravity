@@ -214,3 +214,24 @@ input[type="checkbox"],
     background: #FF8282;
     visibility: hidden;
 }
+
+
+
+/* -------------------------------------MEDIA QUERY--------------------------------------- */
+
+@media screen and (max-width:500px){
+    .body-all{
+        box-sizing: border-box;
+    }
+    .main{
+        width: 300px;
+    }
+    .slider section{
+        width: 100%;
+        flex: 0%;
+    }
+    .form-area{
+        width: auto;
+        padding: 10px 5px;
+    }
+}
