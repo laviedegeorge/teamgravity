@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <main class="main r-flex">
         <div class="form-area bg-white">
             <h3 class="raleway-bold font-36 text-lightblue">Sign in</h3>
+
             <p class="raleway-regular font-14 text-grey">Provide email and password</p>
             <span id="error"><?php echo $errors; ?></span>
             <form action="<?php echo htmlspecialchars($_SERVER['login.php']); ?>" class="form-input-area" method="post"
@@ -52,9 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         class="font-16 raleway-normal">
                 </div>
 
-
                 <div class="r-flex login-area">
-                    <input class="login-text font-18 raleway-bold" value="login"
+                    <input class="r-flex login-text font-18 raleway-bold" value="login"
                         type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <svg width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 7H37" stroke="#9C9C9C" />
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </form>
         </div>
         <div class="signup-tab bg-grey text-center">
-            <p class="sign-up-text font-16 raleway-regular">sign up</p>
+            <p class="sign-x-text font-16 raleway-regular">sign up</p>
             <span>
                 <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 16.5L8.5 8.5L0.999999 0.5" stroke="#969696" />

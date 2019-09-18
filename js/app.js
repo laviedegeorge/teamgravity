@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
         // slider
         slider.classList.toggle("move-right");
         if (slider.classList.contains('move-right')) { // move-left
-            span.innerText = "sign in";
+            span.innerText ="sign in";
             chevron.style.transform = 'rotate(270deg)';
             setTimeout(() => {
                 adjustHeight(signUp);
@@ -28,9 +28,10 @@ window.addEventListener("load", () => {
             setTimeout(() => {
                 adjustHeight(signIn);
             }, 300);
-            span.innerText = "sign up";
+            span.innerText ="sign up";
             chevron.style.transform = 'rotate(90deg)';
         }
     }
     btn.addEventListener("click", slide);
 })
+

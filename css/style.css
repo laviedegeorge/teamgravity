@@ -26,6 +26,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+input, button{
+    border: none;
+    outline: none !important;
+    background: transparent;
+}
+
+button,
+input[type="checkbox"]{
+    cursor: pointer;
 }
 
 input,
@@ -113,6 +125,33 @@ p {
     position: relative;
     overflow: hidden;
     transition: all .3s ease-out;
+
+}
+
+/* .main * {
+    outline: solid 1px currentColor;
+}
+ */
+.main .slider {
+    display: inline-flex;
+    align-items: flex-start;
+    transform: translateX(0);
+    transition: all .3s ease-out;
+}
+
+.slider section {
+    width: 400px;
+    flex: 0 0 400px;
+}
+
+.slider aside {
+    flex: 0 0 50px;
+    align-self: stretch;
+}
+
+.main .slider.move-right {
+    transform:translateX(calc(-50% + 25px))
+
 }
 
 /* .main * {
@@ -161,6 +200,11 @@ p {
 }
 
 .focus-input-area {
+.form-signup{
+    padding-right: 5px;
+    margin-bottom: 15px;
+}
+.focus-input-area{
     padding: 10px 14px;
     border-radius: 15px;
     margin-top: 12px;
@@ -215,7 +259,7 @@ input[type="checkbox"],
     transform: rotate(90deg);
 }
 
-.error-box {
+.error-box{
     position: absolute;
     width: 100%;
     padding: 17px 28px;
@@ -228,21 +272,18 @@ input[type="checkbox"],
 
 /* -------------------------------------MEDIA QUERY--------------------------------------- */
 
-@media screen and (max-width:500px) {
-    .body-all {
+@media screen and (max-width:500px){
+    .body-all{
         box-sizing: border-box;
     }
-
-    .main {
+    .main{
         width: 300px;
     }
-
-    .slider section {
+    .slider section{
         width: 100%;
         flex: 0%;
     }
-
-    .form-area {
+    .form-area{
         width: auto;
         padding: 10px 5px;
     }
