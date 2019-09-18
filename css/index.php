@@ -1,3 +1,2 @@
 <?php
-    header("location: ../app/");
-?>
+require_once "../app/index.php";

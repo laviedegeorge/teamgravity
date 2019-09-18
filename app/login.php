@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include "../includes/functions.php";
 include "../includes/script.php";
 include "../includes/style.php";
@@ -19,8 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $users = Users::getInstance();
         if ($user = $users->login($email, $password)) {
             // Redirect to success page
+            header("location: lsuccess.php?user=" . $user['name']);
+            die();
         } else {
             // Show Error message
+            $errors = "Failed to login";
         }
     }
 }
@@ -32,7 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <h3 class="raleway-bold font-36 text-lightblue">Sign in</h3>
 
             <p class="raleway-regular font-14 text-grey">Provide email and password</p>
-            <span id="error"><?php echo $errors; ?></span>
             <form action="<?php echo htmlspecialchars($_SERVER['login.php']); ?>" class="form-input-area" method="post"
                 id="myForm">
                 <div class="r-flex focus-input-area">
@@ -71,5 +74,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 </svg>
             </span>
         </div>
+        <?php
+if ($errors) {?>
+        <div class="error-box raleway-regular font-14"><?php echo $errors ?></div>
+
+        <?php }
+?>
     </main>
 </body>

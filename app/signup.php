@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include "../includes/functions.php";
 include "../includes/script.php";
 include "../includes/style.php";
@@ -30,35 +31,40 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (!$errors) {
         $data = [
-            'email' => $email,
+            'email' => strtolower($email),
             'name' => $fullname,
             'password' => $password,
         ];
         $users = Users::getInstance();
         if ($user = $users->signup($data)) {
-            print_r($user);
-            // Redirect to success page
+            header("location: success.php?user=" . $user['name']);
+            die();
         } else {
-            // Show Error message
-            print_r($user);
+            $errors = "Sign up failed";
         }
     }
 }
 ?>
 
 <body class="body-all">
+
     <main class="main r-flex">
-    <div class="signup-tab bg-grey text-center">
+
+        <div class="signup-tab bg-grey text-center">
+
             <p class="sign-x-text font-16 raleway-regular sign-in-text">sign in</p>
             <span class="sign-up">
                 <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.5 0.5L1 8.5L8.5 16.5" stroke="#969696"/>
+                    <path d="M8.5 0.5L1 8.5L8.5 16.5" stroke="#969696" />
                 </svg>
             </span>
-        </div>        
+        </div>
+
         <div class="form-area bg-white">
+
             <h3 class="raleway-bold font-36 text-lightblue">Sign up</h3>
             <p class="raleway-regular font-14 text-grey">Fill the form to create account</p>
+
             <form action="<?php echo htmlspecialchars($_SERVER['signup.php']); ?>" method="post"
                 class="form-input-area form-signup">
                 <div class="r-flex focus-input-area bg-grey-dark">
@@ -120,7 +126,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </form>
         </div>
         </div>
-        <div class="error-box raleway-regular font-14">Invalid email or password provided</div>
+        <?php
+if ($errors) {?>
+        <div class="error-box raleway-regular font-14"><?php echo $errors ?></div>
+
+        <?php }
+?>
 
     </main>
 
