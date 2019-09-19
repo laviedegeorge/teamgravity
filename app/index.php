@@ -160,7 +160,7 @@
                         </div>
                         <div class="r-flex focus-input-area bg-grey-dark">
                             <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="email" name="email" id="" placeholder="hello@vendor.com"
+                            <input type="email" required name="email" id="" placeholder="hello@vendor.com"
                                 class="font-16 raleway-normal">
                         </div>
                         <div class="r-flex focus-input-area bg-grey-dark">
@@ -173,7 +173,7 @@
                                 </svg>
 
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="password" name="password" id="" placeholder="password" class="font-16 raleway-normal">
+                            <input type="password" required name="password" id="password" placeholder="password" class="font-16 raleway-normal x-confirm">
                         </div>
                         <div class="r-flex focus-input-area bg-grey-dark">
                             &nbsp;<span class="text-lightblue font-20">
@@ -185,19 +185,19 @@
                                 </svg>
 
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="password" name="confirm-password" id="" placeholder="confirm password"
-                                class="font-16 raleway-normal">
+                            <input type="password" required name="confirm-password" id="confirm-password" placeholder="confirm password"
+                                class="font-16 raleway-normal x-confirm">
                         </div>
                     </section>
 
                     <div class="r-flex conditions-checkbox">
-                        <input type="checkbox" name="terms">&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" required name="terms">&nbsp;&nbsp;&nbsp;
                         <p class="raleway-regular font-14 text-grey conditions">
                             I agree to the <b>terms</b> and <b>conditions</b>
                         </p>
                     </div>
 
-                    <button type="submit" name="signup-form"
+                    <button type="submit" name="signup-form" id="submit-form"
                         class="r-flex login-text btn-register font-18 raleway-bold">
                         register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <svg width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,6 +210,7 @@
         </section>
     </main>
 
+    <div class="error-box-x raleway-light"></div>
     <?php if(!is_null(@$errors) && !empty(@$errors)): ?>
     <div class="error-box raleway-regular font-14" id="error-box">
         <?php echo $errors; ?>

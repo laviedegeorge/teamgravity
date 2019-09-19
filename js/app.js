@@ -70,5 +70,32 @@ welcomeCloseBtn.addEventListener("click" , () => {
     welcomeBody.classList.add("close");
 });
 
-/* ----------------------------------------------------------------------------------------- */
+/* -----------------------------------INPUT VALIDATION FOR PASSWORD--------------------------------------------------- */
+const mainPassword = document.getElementById('password');
+const confirmPassword = document.getElementById('confirm-password');
+const submitFormBtn = document.getElementById('submit-form');
+const errorBoxUi = document.querySelector('.error-box-x');
+
+const passwordMatch = () => {
+    if(mainPassword.value === confirmPassword.value) {
+        submitFormBtn.disabled = false;
+        errorBoxUi.classList.add("misc");
+        errorBoxUi.style.background = '#5eccf1';    
+        errorBoxUi.textContent = "Password match"; 
+    }else {
+        submitFormBtn.disabled = true;
+        errorBoxUi.style.background = "#FF8282";
+        errorBoxUi.classList.add("misc");
+        errorBoxUi.textContent = "Password don't match";
+    }  
+    
+    setTimeout(() => {
+        errorBoxUi.style.display = "none";
+    }, 10000)
+    
+}
+
+document.querySelectorAll(".x-confirm").forEach(confam => {
+    confam.addEventListener("keyup", passwordMatch);
+})
 
