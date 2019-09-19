@@ -1,10 +1,10 @@
 <?php
     ob_start();
-    include "../includes/functions.php";
-    include "../includes/script.php";
-    include "../includes/style.php";
-    include "../includes/meta.php";
-    include "classes/Users.php";
+    include __DIR__."/../includes/functions.php";
+    include __DIR__."/../includes/script.php";
+    include __DIR__."/../includes/style.php";
+    include __DIR__."/../includes/meta.php";
+    include __DIR__."/classes/Users.php";
 
     if (($_SERVER['REQUEST_METHOD'] == "POST")):
         $errors = '';
@@ -97,12 +97,12 @@
                     <p class="raleway-regular font-14 text-grey">Provide email and password</p>
 
                     <section class="form-input-area">
-                        <div class="r-flex focus-input-area bg-grey-dark">
+                        <div class="r-flex focus-input-area">
                             <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="email" name="email" id="" placeholder="hello@vendor.com"
+                            <input class="r-flex-1" type="email" name="email" id="" placeholder="hello@vendor.com"
                                 class="font-16 raleway-normal " required>
                         </div>
-                        <div class="r-flex focus-input-area bg-grey-dark">
+                        <div class="r-flex focus-input-area">
                             &nbsp;<span class="text-lightblue font-20">
                                 <svg width="12" height="23" viewBox="0 0 12 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@
                                 </svg>
 
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="password" name="password" id="" placeholder="password"
+                            <input class="r-flex-1" type="password" name="password" id="" placeholder="password"
                                 class="font-16 raleway-normal " required>
                         </div>
                     </section>
@@ -135,7 +135,6 @@
                     </svg>
                     <span>sign Up</span>
                     </span>
-
                 </p>
             </aside>
 
@@ -145,7 +144,7 @@
                     <p class="raleway-regular font-14 text-grey">Fill the form to create account</p>
 
                     <section class="form-input-area form-signup">
-                        <div class="r-flex focus-input-area bg-grey-dark">
+                        <div class="r-flex focus-input-area">
                             <span class="text-lightblue font-20">
                                 <svg width="20" height="27" viewBox="0 0 20 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -156,14 +155,14 @@
                                     <path d="M13.5 19H11.5" stroke="#5ECCF1" />
                                 </svg>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" name="fullname" placeholder="full name" class="font-16 raleway-normal">
+                            <input class="r-flex-1" type="text" name="fullname" placeholder="full name" class="font-16 raleway-normal">
                         </div>
-                        <div class="r-flex focus-input-area bg-grey-dark">
+                        <div class="r-flex focus-input-area">
                             <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="email" required name="email" id="" placeholder="hello@vendor.com"
+                            <input class="r-flex-1" type="email" required name="email" id="" placeholder="hello@vendor.com"
                                 class="font-16 raleway-normal">
                         </div>
-                        <div class="r-flex focus-input-area bg-grey-dark">
+                        <div class="r-flex focus-input-area">
                             &nbsp;<span class="text-lightblue font-20">
                                 <svg width="12" height="23" viewBox="0 0 12 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -173,9 +172,9 @@
                                 </svg>
 
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="password" required name="password" id="password" placeholder="password" class="font-16 raleway-normal x-confirm">
+                            <input class="r-flex-1" type="password" required name="password" id="password" placeholder="password" class="font-16 raleway-normal x-confirm">
                         </div>
-                        <div class="r-flex focus-input-area bg-grey-dark">
+                        <div class="r-flex focus-input-area">
                             &nbsp;<span class="text-lightblue font-20">
                                 <svg width="12" height="23" viewBox="0 0 12 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -185,16 +184,19 @@
                                 </svg>
 
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="password" required name="confirm-password" id="confirm-password" placeholder="confirm password"
+                            <input class="r-flex-1" type="password" required name="confirm-password" id="confirm-password" placeholder="confirm password"
                                 class="font-16 raleway-normal x-confirm">
                         </div>
                     </section>
 
-                    <div class="r-flex conditions-checkbox">
-                        <input type="checkbox" required name="terms">&nbsp;&nbsp;&nbsp;
-                        <p class="raleway-regular font-14 text-grey conditions">
+                    <div class="conditions-checkbox">
+                        <span class="custom-checkbox">
+                            <input id="signup-checkbox" type="checkbox" required name="terms">&nbsp;&nbsp;&nbsp;
+                            <label for="signup-checkbox"></label>
+                        </span>
+                        <span class="raleway-regular font-14 text-grey conditions">
                             I agree to the <b>terms</b> and <b>conditions</b>
-                        </p>
+                        </span>
                     </div>
 
                     <button type="submit" name="signup-form" id="submit-form"

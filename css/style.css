@@ -96,6 +96,9 @@ button:hover{
     display: flex;
 }
 
+.r-flex-1 {
+    flex: 1;
+}
 /* BACKGROUND COLOR CLASSES */
 .bg-grey {
     background: #FDFDFD;
@@ -199,12 +202,21 @@ p {
 
 .focus-input-area {
     padding: 10px 14px;
-    border-radius: 15px;
     margin-top: 12px;
+    border-radius: 15px;
+    border: solid 1px #f0f0f0;
+}
+
+.focus-input-area:focus-within {
+    background:#f3ffff;
 }
 
 .form-input-area input {
     color: #888888;
+    font-weight: 300;
+    outline: none !important;
+    box-shadow: none !important;
+    font-family: 'Raleway-light';
 }
 
 .form-input-area input::placeholder {
@@ -213,12 +225,43 @@ p {
     font-family: 'Raleway-regular'
 }
 
+.custom-checkbox {
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.custom-checkbox label {
+    cursor: pointer;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border: solid 1px #5eccf1;
+    border-radius: 1px;
+}
+
+.custom-checkbox input:checked + label::after {
+    content: '';
+    background-color: #5eccf1;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+
 input[type="checkbox"],
 .conditions {
     align-self: center;
 }
 
-.conditions-checkbox{
+.conditions-checkbox {
     padding-bottom: 65px;
 }
 
