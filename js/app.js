@@ -40,13 +40,13 @@ window.addEventListener("load", () => {
     if(errorBox){
         setTimeout(() => {
             errorBox.style.display ="none";
-        }, 3000);
+        }, 5000);
     }
     
     if(successMsg){
         setTimeout(() => {
             successMsg.classList.add("close");
-        }, 3000);
+        }, 5000);
     }
 })
 

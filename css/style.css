@@ -3,7 +3,7 @@
 *::after {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
     font-family: 'Raleway-Bold'
 }
 
@@ -128,10 +128,10 @@ p {
     transition: all .3s ease-out;
 }
 
-.slider section {
+/* .slider section {
     width: 400px;
     flex: 0 0 400px;
-}
+} */
 
 .slider aside {
     flex: 0 0 50px;
@@ -153,10 +153,10 @@ p {
     transition: all .3s ease-out;
 }
 
-.slider section {
+/* .slider section {
     width: 400px;
     flex: 0 0 400px;
-}
+} */
 
 .slider aside {
     flex: 0 0 50px;
