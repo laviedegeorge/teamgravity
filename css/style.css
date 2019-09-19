@@ -187,12 +187,6 @@ p {
     margin-bottom: 15px;
 }
 
-
-.form-signup {
-    padding-right: 5px;
-    margin-bottom: 15px;
-}
-
 .focus-input-area {
     padding: 10px 14px;
     border-radius: 15px;
@@ -228,7 +222,7 @@ input[type="checkbox"],
 .signup-tab{
     display: flex;
     align-self: stretch;
-    background-color: yellow;
+    /* background-color: yellow; */
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -248,7 +242,7 @@ input[type="checkbox"],
     transform: rotate(90deg);
 }
 
-.error-box {
+.error-box, .error-box-x {
     top: calc(0% + 5px);
     right: calc(0% + 5px);
     padding: 17px 28px;
@@ -256,6 +250,13 @@ input[type="checkbox"],
     background: #FF8282;
 }
 
+.error-box-x{
+    display: none;
+}
+
+.misc{
+    display: block;
+}
 /* ----------------------MODALS---------------------------------------------------------- */
 .suc-msg{
     width: 200px;
@@ -367,6 +368,6 @@ input[type="checkbox"],
 
     .form-area {
         width: auto;
-        padding: 10px 5px;
+        padding: 10px 8px;
     }
 }
