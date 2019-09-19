@@ -41,6 +41,15 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+button{
+    padding: 10px;
+    transition: ease-in-out .5s;
+    margin-bottom: 5px;
+}
+button:hover{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
 .body-all {
     min-height: 100vh;
     display: flex;
@@ -350,6 +359,7 @@ input[type="checkbox"],
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace
 }
+
 
 /* -------------------------------------MEDIA QUERY--------------------------------------- */
 
