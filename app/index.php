@@ -100,7 +100,7 @@
                         <div class="r-flex focus-input-area bg-grey-dark">
                             <span class="text-lightblue font-20">@</span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="email" name="email" id="" placeholder="hello@vendor.com"
-                                class="font-16 raleway-normal ">
+                                class="font-16 raleway-normal " required>
                         </div>
                         <div class="r-flex focus-input-area bg-grey-dark">
                             &nbsp;<span class="text-lightblue font-20">
@@ -113,7 +113,7 @@
 
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="password" name="password" id="" placeholder="password"
-                                class="font-16 raleway-normal ">
+                                class="font-16 raleway-normal " required>
                         </div>
                     </section>
 
@@ -128,7 +128,7 @@
                 </form>
             </section>
 
-            <aside class="signup-tab bg-grey text-center" id="kc-btn">
+            <aside class="signup-tab bg-grey-dark text-center" id="kc-btn">
                 <p class="sign-x-text font-16 raleway-regular sign-in-text">
                     <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.5 0.5L1 8.5L8.5 16.5" stroke="#969696" />
